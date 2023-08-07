@@ -1,12 +1,12 @@
 
 
-     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:07
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-06-2023  21:45:45
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
                                                 OPTIONS SELECTED BY INPUT
 
-KEYWORD FILE NAME: /Users/adityatadimeti/forest-project/testKey
+KEYWORD FILE NAME: testKey
 ----------------------------------------------------------------------------------------------------------------------------------
 KEYWORD    PARAMETERS:
 --------   -----------------------------------------------------------------------------------------------------------------------
@@ -228,7 +228,7 @@ BOARD FEET/ACRE         0.00      0.00
 BASAL AREA/ACRE       317.31    240.93      0.76    372    292.74       341.88       7.7       24.6
 
 
-     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:08
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-06-2023  21:45:45
 
 STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
 
@@ -323,7 +323,7 @@ YEAR  ATTRIBUTES      10     30     50     70     90    100       ATTRIBUTES    
         MERCH        10.4   12.9   14.9   17.1   20.9    25.0  113845. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
 
 
-     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:10
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-06-2023  21:45:46
 
 STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
 
@@ -407,7 +407,7 @@ YEAR   %TILE  SPECIES (INCHES)  (FEET)  RATIO  (INCHES)  %TILE    ACRE   AGE    
                                                                           60      13.5      421.     417.      140.4    207.9
 
 
-     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:10
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-06-2023  21:45:46
 
 STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
 

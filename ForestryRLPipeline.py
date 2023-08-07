@@ -1,5 +1,6 @@
 import os
 from tqdm import tqdm
+import pandas as pd
 
 tree_widths = []
 for j in range(8):
@@ -9,10 +10,8 @@ growth_vals = []
 
 print(tree_widths)
 
-import pandas as pd
-    
 
-trees_dataframe = pd.read_excel('/Users/adityatadimeti/forest-project/trees.csv')
+trees_dataframe = pd.read_excel('Datasets/trees.csv')
 total = len(trees_dataframe)
 
 invalid_indices = [54,55,59,60,61,200]
@@ -20,12 +19,11 @@ invalid_indices = [54,55,59,60,61,200]
 increment = 0
 
 
-keyFile = open('/Users/adityatadimeti/forest-project/testKey.key', 'w')
+keyFile = open('testKey.key', 'w')
 keyFile.write('SCREEN\n')
 keyFile.write('STATS\n')
 keyFile.write('STDIDENT\n')
 keyFile.write('S248112  UNTHINNED CONTROL.\n')
-# keyFile.write('DESIGN                                               1.0\n')
 keyFile.write('DESIGN                                               \n')
 
 keyFile.write('STDINFO\n')
@@ -92,7 +90,7 @@ for width in width_vals:
     makefile.write('all : cat01\n')
     makefile.write('cat01 : \n')
 
-    makefile.write('\t' + './ForestVegetationSimulator-FS2023.1/bin/FVSca --keywordfile=/Users/adityatadimeti/forest-project/testKey.key\n')
+    makefile.write('\t' + './ForestVegetationSimulator-FS2023.1/bin/FVSca --keywordfile=testKey.key\n')
 
     makefile.close()
 
