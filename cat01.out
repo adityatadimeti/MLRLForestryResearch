@@ -1,0 +1,323 @@
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    06-06-2023  11:27:43
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+                                                OPTIONS SELECTED BY INPUT
+
+KEYWORD FILE NAME: /Users/adityatadimeti/forest-project/cat01
+----------------------------------------------------------------------------------------------------------------------------------
+KEYWORD    PARAMETERS:
+--------   -----------------------------------------------------------------------------------------------------------------------
+
+SCREEN     SUMMARY TABLE WILL BE PRINTED TO DATA SET REFERENCE NUMBER     6 AS RUN PROGRESSES.
+
+STATS      STATISTICAL DESCRIPTION OF INPUT DATA WILL BE PROVIDED; CONFIDENCE LIMITS AT 0.05 LEVEL.
+
+STDIDENT
+           STAND ID= S248112                            UNTHINNED CONTROL.                                                     
+
+DESIGN     BASAL AREA FACTOR=   40.0; INVERSE OF FIXED PLOT AREA=  300.0; BREAK DBH=    5.0
+           NUMBER OF PLOTS=    11; NON-STOCKABLE PLOTS=     1; STAND SAMPLING WEIGHT=    11.00000
+           PROPORTION OF STAND CONSIDERED STOCKABLE=  0.909
+           SEE "OPTIONS SELECTED BY DEFAULT" FOR FINAL DESIGN VALUES.
+
+           PLANT COMMUNITY CODE USED IN THIS PROJECTION IS CWC221  
+
+STDINFO    FOREST-LOCATION CODE=     610; HABITAT TYPE=452; AGE=   60; ASPECT AZIMUTH IN DEGREES= 315.; SLOPE=  30.%
+           ELEVATION(100'S FEET)= 35.0; REFERENCE CODE=     
+
+INVYEAR    INVENTORY YEAR= 2018
+
+NUMCYCLE   NUMBER OF CYCLES=  6
+
+TREEFMT 
+          (T24,I4,T1,I4,T31,F2.0,I1,A3,F3.1,F2.1,T45,F3.0,T63,F3.0,T60,F3.1,T48,I1,T52,I2,
+          TREEDATAECHOSUM                                                                 
+
+PROCESS    PROCESS THE STAND.
+
+********   FVS08 WARNING:  TOO FEW PROJECTABLE TREE RECORDS.  PROJECTABLE RECORDS: 0;
+                            TREE RECORDS:   0;  STAND ID: S248112                   
+           (NOTREES OPTION IS AUTOMATICALLY INVOKED.)
+           (EZCRUISE OPTION IN REGENERATION ESTABLISHMENT MODEL IS AUTOMATICALLY INVOKED.)
+----------------------------------------------------------------------------------------------------------------------------------
+
+                                                OPTIONS SELECTED BY DEFAULT
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+DESIGN     BASAL AREA FACTOR=   40.0; INVERSE OF FIXED PLOT AREA=  300.0; BREAK DBH=    5.0
+           NUMBER OF PLOTS=    11; NON-STOCKABLE PLOTS=     1; STAND SAMPLING WEIGHT=    11.00000
+           PROPORTION OF STAND CONSIDERED STOCKABLE=  0.909
+           STAND ATTRIBUTES ARE CALCULATED PER ACRE OF STOCKABLE AREA.  STAND STATISTICS
+           IN SUMMARY TABLE ARE MULTIPLIED BY 0.909 TO INCLUDE TOTAL STAND AREA.
+
+STDINFO    FOREST-LOCATION CODE=     610; HABITAT TYPE=452; AGE=   60; ASPECT AZIMUTH IN DEGREES= 315.; SLOPE=  30.%
+           ELEVATION(100'S FEET)= 35.0;  REFERENCE CODE=     
+
+SPECIES      PC      IC      RC      WF      RF      SH      DF      WH      MH      WB
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      KP      LP      CP      LM      JP      SP      WP      PP      MP      GP
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      WJ      BR      GS      PY      OS      LO      CY      BL      EO      WO
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      BO      VO      IO      BM      BU      RA      MA      GC      DG      FL
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      WN      TO      SY      AS      CW      WI      CN      CL      OH      RW
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+                                  NATIONAL VOLUME ESTIMATOR LIBRARY EQUATION NUMBERS
+SPECIES CUBIC FOOT BOARD FOOT SPECIES CUBIC FOOT BOARD FOOT SPECIES CUBIC FOOT BOARD FOOT SPECIES CUBIC FOOT BOARD FOOT 
+------- ---------- ---------- ------- ---------- ---------- ------- ---------- ---------- ------- ---------- ---------- 
+  PC    616BEHW000 616BEHW000   IC    616BEHW081 616BEHW081   RC    616BEHW242 616BEHW242   WF    I00FW2W093 I00FW2W093
+  RF    616BEHW020 616BEHW020   SH    616BEHW021 616BEHW021   DF    F06FW2W202 F06FW2W202   WH    616BEHW263 616BEHW263
+  MH    616BEHW264 616BEHW264   WB    616BEHW101 616BEHW101   KP    616BEHW103 616BEHW103   LP    616BEHW108 616BEHW108
+  CP    616BEHW000 616BEHW000   LM    616BEHW113 616BEHW113   JP    616BEHW116 616BEHW116   SP    616BEHW117 616BEHW117
+  WP    616BEHW119 616BEHW119   PP    I00FW2W073 I00FW2W073   MP    616BEHW000 616BEHW000   GP    616BEHW000 616BEHW000
+  WJ    616BEHW064 616BEHW064   BR    616BEHW000 616BEHW000   GS    616BEHW000 616BEHW000   PY    616BEHW231 616BEHW231
+  OS    616BEHW299 616BEHW299   LO    616BEHW000 616BEHW000   CY    616BEHW000 616BEHW000   BL    616BEHW000 616BEHW000
+  EO    616BEHW000 616BEHW000   WO    616BEHW815 616BEHW815   BO    616BEHW818 616BEHW818   VO    616BEHW000 616BEHW000
+  IO    616BEHW000 616BEHW000   BM    616BEHW312 616BEHW312   BU    616BEHW000 616BEHW000   RA    616BEHW351 616BEHW351
+  MA    616BEHW361 616BEHW361   GC    616BEHW431 616BEHW431   DG    616BEHW492 616BEHW492   FL    616BEHW000 616BEHW000
+  WN    616BEHW000 616BEHW000   TO    616BEHW631 616BEHW631   SY    616BEHW000 616BEHW000   AS    616BEHW746 616BEHW746
+  CW    616BEHW747 616BEHW747   WI    616BEHW920 616BEHW920   CN    616BEHW000 616BEHW000   CL    616BEHW000 616BEHW000
+  OH    616BEHW998 616BEHW998   RW    616BEHW211 616BEHW211
+
+SITECODE   SITE INDEX INFORMATION:
+            PC=   83.;  IC=   64.;  RC=   74.;  WF=   92.;  RF=   92.;  SH=   92.;  DF=   92.;  WH=   87.; MH=   83.
+            WB=   83.;  KP=   83.;  LP=   83.;  CP=   83.;  LM=   83.;  JP=   86.;  SP=   92.;  WP=   86.; PP=   86.
+            MP=   83.;  GP=   83.;  WJ=   70.;  BR=   70.;  GS=   92.;  PY=   37.;  OS=   70.;  LO=   26.; CY=   39.
+            BL=   31.;  EO=   26.;  WO=   37.;  BO=   52.;  VO=   70.;  IO=   26.;  BM=   70.;  BU=   52.; RA=   70.
+            MA=   70.;  GC=   70.;  DG=   37.;  FL=   64.;  WN=   37.;  TO=   70.;  SY=   70.;  AS=   37.; CW=   70.
+            WI=   23.;  CN=   23.;  CL=   23.;  OH=   52.;  RW=   92.
+           SITE SPECIES=DF CODE=    7
+
+INVENTORY POINT CROSS REFERENCE (FVS SEQUENTIAL POINT NUMBER = POINT NUMBER AS ENTERED IN THE INPUT DATA):
+  1=       0;   2=       0;   3=       0;   4=       0;   5=       0;   6=       0;   7=       0;   8=       0;   9=       0
+ 10=       0;  11=       0
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                     ACTIVITY SCHEDULE
+
+STAND ID= S248112                       MGMT ID= NONE     UNTHINNED CONTROL.                                                     
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+CYCLE  DATE  EXTENSION  KEYWORD   DATE  PARAMETERS:
+-----  ----  ---------  --------  ----  ------------------------------------------------------------------------------------------
+
+   1   2018
+   2   2028
+   3   2038
+   4   2048
+   5   2058
+   6   2068
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    06-06-2023  11:27:43
+
+STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
+
+
+                                        STAND COMPOSITION (BASED ON STOCKABLE AREA)
+--------------------------------------------------------------------------------------------------------------------------
+                            PERCENTILE POINTS IN THE
+                     DISTRIBUTION OF STAND ATTRIBUTES BY DBH      TOTAL/ACRE
+        STAND       -----------------------------------------      OF STAND         DISTRIBUTION OF STAND ATTRIBUTES BY
+YEAR  ATTRIBUTES      10     30     50     70     90    100       ATTRIBUTES       SPECIES AND 3 USER-DEFINED SUBCLASSES
+----  -----------   ------ ------ ------ ------ ------ ------   --------------  ------------------------------------------
+                                 (DBH IN INCHES)
+
+
+
+2018  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2028  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2038  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2048  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2058  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2068  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT/YR    0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2078  TREES           0.0    0.0    0.0    0.0    0.0     0.0       0. TREES      0.% ---,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         0.0    0.0    0.0    0.0    0.0     0.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    06-06-2023  11:27:43
+
+STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+                     ATTRIBUTES OF SELECTED SAMPLE TREES                 ADDITIONAL STAND ATTRIBUTES (BASED ON STOCKABLE AREA)
+      -----------------------------------------------------------------  -----------------------------------------------------
+      INITIAL                           LIVE   PAST DBH  BASAL   TREES          QUADRATIC   TREES    BASAL  TOP HEIGHT  CROWN
+      TREES/A            DBH    HEIGHT  CROWN   GROWTH   AREA     PER    STAND   MEAN DBH    PER     AREA     LARGEST   COMP
+YEAR   %TILE  SPECIES (INCHES)  (FEET)  RATIO  (INCHES)  %TILE    ACRE   AGE     (INCHES)    ACRE   (SQFT/A) 40/A (FT)  FACTOR
+----  ------- ------- -------- -------- ------ --------- ------- ------  -----  ---------   ------ --------- --------- -------
+
+2018                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                          60       0.0        0.       0.        0.0      0.0
+
+2028                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                          70       0.0        0.       0.        0.0      0.0
+
+2038                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                          80       0.0        0.       0.        0.0      0.0
+
+2048                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                          90       0.0        0.       0.        0.0      0.0
+
+2058                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                         100       0.0        0.       0.        0.0      0.0
+
+2068                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                         110       0.0        0.       0.        0.0      0.0
+
+2078                                          ( 10 YRS)
+
+        10     ---       0.00     0.00     0     0.00      0.0    0.00
+        30     ---       0.00     0.00     0     0.00      0.0    0.00
+        50     ---       0.00     0.00     0     0.00      0.0    0.00
+        70     ---       0.00     0.00     0     0.00      0.0    0.00
+        90     ---       0.00     0.00     0     0.00      0.0    0.00
+       100     ---       0.00     0.00     0     0.00      0.0    0.00
+                                                                         120       0.0        0.       0.        0.0      0.0
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    06-06-2023  11:27:43
+
+STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
+
+
+
+                                SUMMARY STATISTICS (PER ACRE OR STAND BASED ON TOTAL STAND AREA)
+--------------------------------------------------------------------------------------------------------------------------------------
+               START OF SIMULATION PERIOD                     REMOVALS             AFTER TREATMENT    GROWTH THIS PERIOD
+         --------------------------------------------- ----------------------- ---------------------  ------------------   MAI  ------
+         NO OF              TOP      TOTAL MERCH MERCH NO OF TOTAL MERCH MERCH              TOP  RES  PERIOD ACCRE MORT   MERCH FOR SS
+YEAR AGE TREES  BA  SDI CCF HT  QMD  CU FT CU FT BD FT TREES CU FT CU FT BD FT  BA  SDI CCF HT   QMD  YEARS   PER  YEAR   CU FT TYP ZT
+---- --- ----- --- ---- --- --- ---- ----- ----- ----- ----- ----- ----- ----- --- ---- --- --- ----  ------ ---- -----   ----- ------
+2018  60     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0      10    0     0     0.0 999 55
+2028  70     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0      10    0     0     0.0 999 55
+2038  80     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0      10    0     0     0.0 999 55
+2048  90     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0      10    0     0     0.0 999 55
+2058 100     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0      10    0     0     0.0 999 55
+2068 110     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0      10    0     0     0.0 999 55
+2078 120     0   0    0   0   0  0.0     0     0     0     0     0     0     0   0    0   0   0  0.0       0    0     0     0.0 999 55

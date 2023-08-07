@@ -1,0 +1,431 @@
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:07
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+                                                OPTIONS SELECTED BY INPUT
+
+KEYWORD FILE NAME: /Users/adityatadimeti/forest-project/testKey
+----------------------------------------------------------------------------------------------------------------------------------
+KEYWORD    PARAMETERS:
+--------   -----------------------------------------------------------------------------------------------------------------------
+
+SCREEN     SUMMARY TABLE WILL BE PRINTED TO DATA SET REFERENCE NUMBER     6 AS RUN PROGRESSES.
+
+STATS      STATISTICAL DESCRIPTION OF INPUT DATA WILL BE PROVIDED; CONFIDENCE LIMITS AT 0.05 LEVEL.
+
+STDIDENT
+           STAND ID= S248112                            UNTHINNED CONTROL.                                                     
+
+DESIGN     BASAL AREA FACTOR=   40.0; INVERSE OF FIXED PLOT AREA=  300.0; BREAK DBH=    5.0
+           NUMBER OF PLOTS=     0; NON-STOCKABLE PLOTS=     0; STAND SAMPLING WEIGHT=     0.00000
+           PROPORTION OF STAND CONSIDERED STOCKABLE=  1.000
+           SEE "OPTIONS SELECTED BY DEFAULT" FOR FINAL DESIGN VALUES.
+
+********   FVS03 WARNING:  FOREST CODE INDICATES THE GEOGRAPHIC LOCATION IS OUTSIDE THE RANGE OF THE MODEL.  DEFAULT CODE IS USED.
+
+********   FOREST CODE USED IN THIS PROJECTION IS 610
+
+STDINFO    FOREST-LOCATION CODE=     610; HABITAT TYPE=  0; AGE=    0; ASPECT AZIMUTH IN DEGREES=   0.; SLOPE=   5.%
+           ELEVATION(100'S FEET)= 35.0; REFERENCE CODE=     
+
+INVYEAR    INVENTORY YEAR= 2018
+
+NUMCYCLE   NUMBER OF CYCLES=  6
+
+TREEFMT 
+          (I4,T1,I7,F6.0,I1,A3,F4.1,F3.1,2F3.0,F4.1,I1,                                   
+          6I2,2I1,I2,2I3,2I1,F3.0)                                                        
+
+TREEDATA   DATA SET REFERENCE NUMBER= 15
+
+ECHOSUM    SUMMARY OUTPUT WILL BE WRITTEN TO FILE REFERENCED BY NUMBER  4
+
+PROCESS    PROCESS THE STAND.
+----------------------------------------------------------------------------------------------------------------------------------
+
+                                                OPTIONS SELECTED BY DEFAULT
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+DESIGN     BASAL AREA FACTOR=   40.0; INVERSE OF FIXED PLOT AREA=  300.0; BREAK DBH=    5.0
+           NUMBER OF PLOTS=   372; NON-STOCKABLE PLOTS=     0; STAND SAMPLING WEIGHT=   372.00000
+           PROPORTION OF STAND CONSIDERED STOCKABLE=  1.000
+
+********   FVS14 WARNING:  HABITAT/PLANT ASSOCIATION/ECOREGION CODE WAS NOT RECOGNIZED; HABITAT/PLANT ASSOCIATION/ECOREGION SET TO DEFAULT CODE.
+
+           PLANT COMMUNITY CODE USED IN THIS PROJECTION IS CWC221  
+
+STDINFO    FOREST-LOCATION CODE=     610; HABITAT TYPE=452; AGE=    0; ASPECT AZIMUTH IN DEGREES=   0.; SLOPE=   5.%
+           ELEVATION(100'S FEET)= 35.0;  REFERENCE CODE=     
+
+SPECIES      PC      IC      RC      WF      RF      SH      DF      WH      MH      WB
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      KP      LP      CP      LM      JP      SP      WP      PP      MP      GP
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      WJ      BR      GS      PY      OS      LO      CY      BL      EO      WO
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      BO      VO      IO      BM      BU      RA      MA      GC      DG      FL
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+SPECIES      WN      TO      SY      AS      CW      WI      CN      CL      OH      RW
+SDI MAX     815.    815.    815.    815.    815.    815.    815.    815.    815.    815.
+
+                                  NATIONAL VOLUME ESTIMATOR LIBRARY EQUATION NUMBERS
+SPECIES CUBIC FOOT BOARD FOOT SPECIES CUBIC FOOT BOARD FOOT SPECIES CUBIC FOOT BOARD FOOT SPECIES CUBIC FOOT BOARD FOOT 
+------- ---------- ---------- ------- ---------- ---------- ------- ---------- ---------- ------- ---------- ---------- 
+  PC    616BEHW000 616BEHW000   IC    616BEHW081 616BEHW081   RC    616BEHW242 616BEHW242   WF    I00FW2W093 I00FW2W093
+  RF    616BEHW020 616BEHW020   SH    616BEHW021 616BEHW021   DF    F06FW2W202 F06FW2W202   WH    616BEHW263 616BEHW263
+  MH    616BEHW264 616BEHW264   WB    616BEHW101 616BEHW101   KP    616BEHW103 616BEHW103   LP    616BEHW108 616BEHW108
+  CP    616BEHW000 616BEHW000   LM    616BEHW113 616BEHW113   JP    616BEHW116 616BEHW116   SP    616BEHW117 616BEHW117
+  WP    616BEHW119 616BEHW119   PP    I00FW2W073 I00FW2W073   MP    616BEHW000 616BEHW000   GP    616BEHW000 616BEHW000
+  WJ    616BEHW064 616BEHW064   BR    616BEHW000 616BEHW000   GS    616BEHW000 616BEHW000   PY    616BEHW231 616BEHW231
+  OS    616BEHW299 616BEHW299   LO    616BEHW000 616BEHW000   CY    616BEHW000 616BEHW000   BL    616BEHW000 616BEHW000
+  EO    616BEHW000 616BEHW000   WO    616BEHW815 616BEHW815   BO    616BEHW818 616BEHW818   VO    616BEHW000 616BEHW000
+  IO    616BEHW000 616BEHW000   BM    616BEHW312 616BEHW312   BU    616BEHW000 616BEHW000   RA    616BEHW351 616BEHW351
+  MA    616BEHW361 616BEHW361   GC    616BEHW431 616BEHW431   DG    616BEHW492 616BEHW492   FL    616BEHW000 616BEHW000
+  WN    616BEHW000 616BEHW000   TO    616BEHW631 616BEHW631   SY    616BEHW000 616BEHW000   AS    616BEHW746 616BEHW746
+  CW    616BEHW747 616BEHW747   WI    616BEHW920 616BEHW920   CN    616BEHW000 616BEHW000   CL    616BEHW000 616BEHW000
+  OH    616BEHW998 616BEHW998   RW    616BEHW211 616BEHW211
+
+SITECODE   SITE INDEX INFORMATION:
+            PC=   83.;  IC=   64.;  RC=   74.;  WF=   92.;  RF=   92.;  SH=   92.;  DF=   92.;  WH=   87.; MH=   83.
+            WB=   83.;  KP=   83.;  LP=   83.;  CP=   83.;  LM=   83.;  JP=   86.;  SP=   92.;  WP=   86.; PP=   86.
+            MP=   83.;  GP=   83.;  WJ=   70.;  BR=   70.;  GS=   92.;  PY=   37.;  OS=   70.;  LO=   26.; CY=   39.
+            BL=   31.;  EO=   26.;  WO=   37.;  BO=   52.;  VO=   70.;  IO=   26.;  BM=   70.;  BU=   52.; RA=   70.
+            MA=   70.;  GC=   70.;  DG=   37.;  FL=   64.;  WN=   37.;  TO=   70.;  SY=   70.;  AS=   37.; CW=   70.
+            WI=   23.;  CN=   23.;  CL=   23.;  OH=   52.;  RW=   92.
+           SITE SPECIES=DF CODE=    7
+
+INVENTORY POINT CROSS REFERENCE (FVS SEQUENTIAL POINT NUMBER = POINT NUMBER AS ENTERED IN THE INPUT DATA):
+  1=      32;   2=      33;   3=      34;   4=      35;   5=      36;   6=      37;   7=      40;   8=      41;   9=      42
+ 10=      43;  11=      44;  12=      45;  13=     185;  14=     186;  15=     187;  16=     177;  17=     178;  18=     180
+ 19=     181;  20=     182;  21=     183;  22=     184;  23=     189;  24=     191;  25=     192;  26=    2110;  27=    2112
+ 28=    2113;  29=    2114;  30=    2116;  31=    2117;  32=    2118;  33=      19;  34=      21;  35=      22;  36=       1
+ 37=       2;  38=       4;  39=       5;  40=       6;  41=       7;  42=       8;  43=       9;  44=      10;  45=      11
+ 46=      13;  47=      14;  48=      15;  49=      16;  50=      23;  51=      24;  52=      25;  53=      29;  54=      30
+ 55=      31;  56=      46;  57=      47;  58=      48;  59=      49;  60=      50;  61=      51;  62=      54;  63=      56
+ 64=      57;  65=      58;  66=      59;  67=      60;  68=      61;  69=      62;  70=      66;  71=      67;  72=      68
+ 73=      69;  74=      71;  75=      72;  76=      73;  77=      74;  78=      76;  79=      78;  80=      81;  81=      82
+ 82=      83;  83=      84;  84=      88;  85=      89;  86=      92;  87=      93;  88=      94;  89=      95;  90=      96
+ 91=      97;  92=      99;  93=     100;  94=     101;  95=     102;  96=     104;  97=     105;  98=     106;  99=     107
+100=     111; 101=     112; 102=     113; 103=     114; 104=     115; 105=     118; 106=     119; 107=     120; 108=     123
+109=     125; 110=     126; 111=     127; 112=     128; 113=     129; 114=     130; 115=     132; 116=     133; 117=     134
+118=     135; 119=     136; 120=     137; 121=     138; 122=     139; 123=     140; 124=     142; 125=     143; 126=     144
+127=     145; 128=     146; 129=     147; 130=     148; 131=     149; 132=     150; 133=     151; 134=     152; 135=     153
+136=     154; 137=     155; 138=     156; 139=     157; 140=     158; 141=     159; 142=     160; 143=     161; 144=     164
+145=     165; 146=     166; 147=     167; 148=     168; 149=     173; 150=     174; 151=     175; 152=     176; 153=     193
+154=     194; 155=     195; 156=     196; 157=     197; 158=     198; 159=     199; 160=     200; 161=    2006; 162=    2001
+163=    2002; 164=    2003; 165=    2004; 166=    2005; 167=    2007; 168=    2008; 169=    2009; 170=     201; 171=    2012
+172=    2013; 173=    2014; 174=    2018; 175=    2019; 176=     202; 177=    2020; 178=    2021; 179=    2022; 180=    2025
+181=    2027; 182=    2029; 183=     203; 184=    2031; 185=    2033; 186=    2034; 187=    2035; 188=    2036; 189=    2049
+190=     205; 191=    2037; 192=    2038; 193=    2039; 194=     204; 195=    2040; 196=    2042; 197=    2043; 198=    2044
+199=    2045; 200=    2046; 201=    2047; 202=    2048; 203=    2050; 204=    2051; 205=    2052; 206=    2053; 207=    2054
+208=    2059; 209=     206; 210=    2060; 211=    2061; 212=    2062; 213=    2063; 214=    2064; 215=    2065; 216=    2067
+217=    2069; 218=     207; 219=    2070; 220=    2071; 221=    2072; 222=    2073; 223=    2074; 224=    2076; 225=    2077
+226=    2079; 227=     208; 228=    2080; 229=    2082; 230=    2085; 231=    2086; 232=     209; 233=    2090; 234=    2095
+235=    2096; 236=    2098; 237=    2099; 238=     210; 239=    2100; 240=    2101; 241=    2103; 242=    2104; 243=    2105
+244=    2106; 245=    2108; 246=     211; 247=     212; 248=    2122; 249=    2124; 250=    2125; 251=    2126; 252=    2127
+253=    2128; 254=    2129; 255=    2130; 256=    2132; 257=    2133; 258=    2134; 259=    2135; 260=    2136; 261=    2137
+262=    2138; 263=    2139; 264=     214; 265=    2140; 266=    2141; 267=    2142; 268=    2143; 269=    2144; 270=    2145
+271=    2147; 272=    2148; 273=    2149; 274=     215; 275=    2150; 276=    2151; 277=    2152; 278=    2153; 279=    2154
+280=    2156; 281=    2158; 282=    2159; 283=     216; 284=    2160; 285=    2161; 286=    2162; 287=    2163; 288=    2164
+289=    2165; 290=    2166; 291=    2167; 292=    2168; 293=    2169; 294=     217; 295=    2170; 296=    2171; 297=    2175
+298=    2176; 299=    2177; 300=    2178; 301=    2179; 302=     218; 303=    2180; 304=    2181; 305=    2182; 306=    2183
+307=    2184; 308=    2185; 309=    2186; 310=    2187; 311=    2189; 312=     219; 313=    2190; 314=    2192; 315=    2193
+316=    2194; 317=    2195; 318=    2196; 319=    2197; 320=    2198; 321=    2199; 322=     220; 323=    2200; 324=    2201
+325=    2202; 326=    2203; 327=    2205; 328=    2207; 329=    2208; 330=    2209; 331=     221; 332=    2210; 333=    2211
+334=    2212; 335=    2213; 336=    2214; 337=    2215; 338=    2217; 339=    2220; 340=    2221; 341=    2223; 342=    2226
+343=    2229; 344=    2230; 345=    2231; 346=    2233; 347=    2234; 348=    2235; 349=    2238; 350=    2239; 351=     224
+352=    2240; 353=    2241; 354=    2242; 355=    2243; 356=    2245; 357=    2246; 358=    2247; 359=    2248; 360=    2250
+361=    2251; 362=    2252; 363=    2254; 364=    2255; 365=    2256; 366=    2257; 367=    2258; 368=    2261; 369=    2262
+370=    2264; 371=    2266; 372=    2267
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                     ACTIVITY SCHEDULE
+
+STAND ID= S248112                       MGMT ID= NONE     UNTHINNED CONTROL.                                                     
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+CYCLE  DATE  EXTENSION  KEYWORD   DATE  PARAMETERS:
+-----  ----  ---------  --------  ----  ------------------------------------------------------------------------------------------
+
+   1   2018
+   2   2028
+   3   2038
+   4   2048
+   5   2058
+   6   2068
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+CALIBRATION STATISTICS:
+
+
+                                                 RW
+                                                ----
+
+NUMBER OF RECORDS PER SPECIES                   2951
+
+NUMBER OF RECORDS WITH MISSING HEIGHTS             0
+
+NUMBER OF RECORDS WITH BROKEN OR DEAD TOPS         0
+
+NUMBER OF RECORDS WITH MISSING CROWN RATIOS        0
+
+NUMBER OF RECORDS AVAILABLE FOR SCALING
+THE DIAMETER INCREMENT MODEL                       0
+
+RATIO OF STANDARD ERRORS
+(INPUT DBH GROWTH DATA : MODEL)                 1.00
+
+WEIGHT GIVEN TO THE INPUT GROWTH DATA WHEN
+DBH GROWTH MODEL SCALE FACTORS WERE COMPUTED    0.00
+
+INITIAL SCALE FACTORS FOR THE
+DBH INCREMENT MODEL                             1.00
+
+NUMBER OF RECORDS AVAILABLE FOR SCALING
+THE SMALL TREE HEIGHT INCREMENT MODEL             0
+
+INITIAL SCALE FACTORS FOR THE SMALL TREE
+HEIGHT INCREMENT MODEL                          1.00
+
+NUMBER OF RECORDS WITH MISTLETOE                   0
+
+***************
+***************
+WARNING: INITIAL STAND STOCKING OF   2327.1 TREES/ACRE IS MORE THAN 5% ABOVE THE UPPER LIMIT OF   2107.3 TREES/ACRE.
+         UPPER LIMIT IS BASED ON A SDI MAXIMUM OF      815.0 AND AN UPPER BOUND OF  85.0 PERCENT OF MAXIMUM.
+         MAXIMUM SDI BEING RESET TO     900.4 FOR FURTHER PROCESSING.
+***************
+***************
+
+
+
+
+        GENERAL SPECIES SUMMARY FOR THE CRUISE (PER ACRE)
+
+  SPECIES        BOARD FEET   CUBIC FEET           TREES    BASAL AREA
+-------------------------------------------------------------------------
+ RW  =  RW              0.0      10022.1          2327.1         317.3
+
+
+                  DISTRIBUTION OF STAND ATTRIBUTES AMONG SAMPLE POINTS
+
+                              STANDARD  COEFF OF SAMPLE             95%           SAMPLING ERROR IN
+CHARACTERISTIC          MEAN DEVIATION VARIATION   SIZE     CONFIDENCE  LIMITS    PERCENT     UNITS
+----------------   --------- --------- --------- ------ ----------------------    -----------------
+TREES/ACRE           2327.12   1766.92      0.76    372   2146.94      2507.30       7.7      180.2
+CUBIC FEET/ACRE     10022.10   8414.10      0.84    372   9164.08     10880.13       8.6      858.0
+BOARD FEET/ACRE         0.00      0.00
+BASAL AREA/ACRE       317.31    240.93      0.76    372    292.74       341.88       7.7       24.6
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:08
+
+STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
+
+
+                                        STAND COMPOSITION (BASED ON STOCKABLE AREA)
+--------------------------------------------------------------------------------------------------------------------------
+                            PERCENTILE POINTS IN THE
+                     DISTRIBUTION OF STAND ATTRIBUTES BY DBH      TOTAL/ACRE
+        STAND       -----------------------------------------      OF STAND         DISTRIBUTION OF STAND ATTRIBUTES BY
+YEAR  ATTRIBUTES      10     30     50     70     90    100       ATTRIBUTES       SPECIES AND 3 USER-DEFINED SUBCLASSES
+----  -----------   ------ ------ ------ ------ ------ ------   --------------  ------------------------------------------
+                                 (DBH IN INCHES)
+
+
+
+2018  TREES           5.0    5.0    5.0    5.0    5.0     5.0    2327. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         5.0    5.0    5.0    5.0    5.0     5.0   10022. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         5.0    5.0    5.0    5.0    5.0     5.0       0. CUFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+        MERCH         5.0    5.0    5.0    5.0    5.0     5.0       0. BDFT       0.% ---,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       5.0    5.0    5.0    5.0    5.0     5.0     581. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       5.0    5.0    5.0    5.0    5.0     5.0     324. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2028  TREES           5.8    6.1    6.3    6.6    7.1     9.3    1571. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         5.9    6.2    6.4    6.7    7.4     9.3   12592. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         7.1    7.2    7.4    7.8    8.2     9.3    2281. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         7.1    7.2    7.4    7.7    8.1     9.3   13926. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       6.0    6.4    6.7    7.0    7.8     9.3     486. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       5.8    5.9    6.1    6.3    6.6     9.3     283. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2038  TREES           6.4    6.9    7.4    8.0    9.3    13.6    1163. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         6.6    7.2    7.8    8.6   10.1    13.6   14624. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         7.2    7.7    8.3    9.0   10.4    13.6   10909. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         7.2    7.6    8.2    8.9   10.3    13.6   62708. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       6.9    7.8    8.4    9.3   10.7    13.6     467. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       6.3    6.7    7.1    7.5    8.2    13.6     260. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2048  TREES           6.9    7.6    8.5    9.5   11.3    18.0     907. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         7.2    8.3    9.4   10.7   12.7    18.0   16689. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         7.6    8.6    9.6   10.9   12.8    18.0   15369. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         7.5    8.5    9.5   10.8   12.8    18.0   84749. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       7.7    9.1   10.2   11.5   13.7    18.0     439. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       6.9    7.5    8.1    8.9   10.1    18.0     276. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2058  TREES           7.4    8.5    9.6   11.0   13.3    20.4     710. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         8.0    9.6   11.1   12.7   15.4    20.4   18321. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         8.1    9.8   11.2   12.7   15.4    20.4   18007. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         8.0    9.6   11.1   12.7   15.5    20.4   98125. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       8.5   10.4   11.9   13.4   16.0    20.4     425. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       7.4    8.4    9.3   10.3   12.0    20.4     320. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2068  TREES           8.1    9.6   11.0   12.7   15.4    23.5     541. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL         9.1   11.2   12.9   14.8   18.1    23.5   19376. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         9.1   11.2   13.0   14.8   18.2    23.5   19341. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH         9.0   11.2   13.1   14.9   18.5    23.5  105915. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+      ACCRETION       9.4   11.7   13.5   15.3   18.3    23.5     408. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      MORTALITY       8.2    9.6   10.7   11.9   13.8    23.5     305. CUFT/YR  100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+
+2078  TREES           9.1   10.9   12.5   14.5   17.7    25.0     421. TREES    100.% RW1,   0.% ---,   0.% ---,   0.% ---
+      VOLUME:  
+        TOTAL        10.3   12.7   14.7   16.8   20.2    25.0   20400. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH        10.4   12.8   14.7   16.8   20.2    25.0   20466. CUFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+        MERCH        10.4   12.9   14.9   17.1   20.9    25.0  113845. BDFT     100.% RW1,   0.% ---,   0.% ---,   0.% ---
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:10
+
+STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+                     ATTRIBUTES OF SELECTED SAMPLE TREES                 ADDITIONAL STAND ATTRIBUTES (BASED ON STOCKABLE AREA)
+      -----------------------------------------------------------------  -----------------------------------------------------
+      INITIAL                           LIVE   PAST DBH  BASAL   TREES          QUADRATIC   TREES    BASAL  TOP HEIGHT  CROWN
+      TREES/A            DBH    HEIGHT  CROWN   GROWTH   AREA     PER    STAND   MEAN DBH    PER     AREA     LARGEST   COMP
+YEAR   %TILE  SPECIES (INCHES)  (FEET)  RATIO  (INCHES)  %TILE    ACRE   AGE     (INCHES)    ACRE   (SQFT/A) 40/A (FT)  FACTOR
+----  ------- ------- -------- -------- ------ --------- ------- ------  -----  ---------   ------ --------- --------- -------
+
+2018                                          ( 10 YRS)
+
+        10     RW1       5.00   128.00    45     0.66     10.0    0.79
+        30     RW1       5.00    69.00    25     0.53     30.0    0.79
+        50     RW1       5.00    52.00    35     0.45     50.0    0.79
+        70     RW1       5.00    92.00    25     0.73     70.0    0.79
+        90     RW1       5.00    53.00    25     0.33     90.0    0.79
+       100     RW1       5.00    78.00    45     1.03    100.0    0.79
+                                                                           0       5.0     2327.     317.       77.7    459.9
+
+2028                                          ( 10 YRS)
+
+        10     RW1       6.20   133.08    41     0.96     36.0    0.31
+        30     RW1       5.94    76.52    23     0.75     15.8    0.41
+        50     RW1       6.48    62.22    32     1.19     56.6    0.53
+        70     RW1       6.49    99.47    23     1.19     56.9    0.65
+        90     RW1       5.80    60.99    23     0.64      7.1    0.77
+       100     RW1       6.98    87.22    41     1.58     81.7    0.78
+                                                                          10       6.4     1571.     354.       97.5    374.8
+
+2038                                          ( 10 YRS)
+
+        10     RW1       8.91   140.20    37     2.17     76.9    0.21
+        30     RW1       6.52    82.87    24     0.47      9.7    0.24
+        50     RW1       7.84    71.55    29     1.09     52.7    0.43
+        70     RW1       7.39   105.90    21     0.72     39.4    0.53
+        90     RW1       6.09    66.31    21     0.24      1.2    0.41
+       100     RW1       8.97    95.99    37     1.59     77.8    0.73
+                                                                          20       7.7     1163.     379.      109.5    324.1
+
+2048                                          ( 10 YRS)
+
+        10     RW1      10.87   146.99    33     1.57     74.1    0.20
+        30     RW1       7.26    89.64    26     0.59     11.7    0.15
+        50     RW1       8.73    79.13    26     0.71     39.3    0.36
+        70     RW1       8.76   112.96    23     1.10     39.8    0.41
+        90     RW1       6.36    71.70    19     0.22      0.1    0.25
+       100     RW1      11.17   104.67    33     1.76     78.6    0.69
+                                                                          30       9.0      907.     404.      117.4    291.7
+
+2058                                          ( 10 YRS)
+
+        10     RW1      14.21   155.68    31     2.67     84.8    0.18
+        30     RW1       7.96    96.07    28     0.56     10.5    0.10
+        50     RW1       9.53    85.82    23     0.64     29.7    0.28
+        70     RW1       9.21   117.56    25     0.36     25.4    0.32
+        90     RW1       6.69    77.53    17     0.26      0.1    0.15
+       100     RW1      12.22   111.09    30     0.84     66.9    0.66
+                                                                          40      10.4      710.     417.      121.4    262.2
+
+2068                                          ( 10 YRS)
+
+        10     RW1      14.88   160.44    32     0.53     73.5    0.18
+        30     RW1       8.88   102.61    30     0.74      9.5    0.07
+        50     RW1      10.72    93.08    22     0.96     27.1    0.21
+        70     RW1       9.75   122.23    26     0.43     16.8    0.23
+        90     RW1       7.16    83.85    19     0.37      0.1    0.09
+       100     RW1      14.47   119.77    27     1.80     69.8    0.59
+                                                                          50      11.9      541.     417.      132.3    231.2
+
+2078                                          ( 10 YRS)
+
+        10     RW1      16.73   167.57    32     1.48     70.7    0.17
+        30     RW1      10.45   110.01    32     1.25     11.9    0.04
+        50     RW1      11.67    99.51    24     0.76     21.9    0.15
+        70     RW1      11.05   128.55    28     1.04     16.7    0.16
+        90     RW1       7.57    89.77    21     0.33      0.1    0.06
+       100     RW1      15.62   126.45    24     0.91     61.1    0.55
+                                                                          60      13.5      421.     417.      140.4    207.9
+
+
+     FOREST VEGETATION SIMULATOR     VERSION FS2023.1 -- INLAND CALIFORNIA / SOUTHERN CASCADES  RV:20230106    08-02-2023  17:31:10
+
+STAND ID: S248112                       MGMT ID: NONE     UNTHINNED CONTROL.
+
+
+
+                                SUMMARY STATISTICS (PER ACRE OR STAND BASED ON TOTAL STAND AREA)
+--------------------------------------------------------------------------------------------------------------------------------------
+               START OF SIMULATION PERIOD                     REMOVALS             AFTER TREATMENT    GROWTH THIS PERIOD
+         --------------------------------------------- ----------------------- ---------------------  ------------------   MAI  ------
+         NO OF              TOP      TOTAL MERCH MERCH NO OF TOTAL MERCH MERCH              TOP  RES  PERIOD ACCRE MORT   MERCH FOR SS
+YEAR AGE TREES  BA  SDI CCF HT  QMD  CU FT CU FT BD FT TREES CU FT CU FT BD FT  BA  SDI CCF HT   QMD  YEARS   PER  YEAR   CU FT TYP ZT
+---- --- ----- --- ---- --- --- ---- ----- ----- ----- ----- ----- ----- ----- --- ---- --- --- ----  ------ ---- -----   ----- ------
+2018   0  2327 317  765 460  78  5.0 10022     0     0     0     0     0     0 317  765 460  78  5.0      10  581   324     0.0 341 21
+2028  10  1571 354  773 375  98  6.4 12592  2281 13926     0     0     0     0 354  773 375  98  6.4      10  486   283     0.0 341 21
+2038  20  1163 379  769 324 110  7.7 14624 10909 62708     0     0     0     0 379  769 324 110  7.7      10  467   260     0.0 341 21
+2048  30   907 404  771 292 117  9.0 16689 15369 84749     0     0     0     0 404  771 292 117  9.0      10  439   276     0.0 341 11
+2058  40   710 417  754 262 121 10.4 18321 18007 98125     0     0     0     0 417  754 262 121 10.4      10  425   320     0.0 341 11
+2068  50   541 417  715 231 132 11.9 19376 19341105915     0     0     0     0 417  715 231 132 11.9      10  408   305     0.0 341 11
+2078  60   421 417  680 208 140 13.5 20400 20466113845     0     0     0     0 417  680 208 140 13.5       0    0     0     0.0 341 11
+
+NOTE:  7 LINES OF SUMMARY DATA HAVE BEEN WRITTEN TO THE FILE REFERENCED BY LOGICAL UNIT  4
