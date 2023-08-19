@@ -21,7 +21,7 @@ def simulation_setup(filepath, year, num_cycles, simulation_type):
     keyFile.write('STDIDENT\n')
     keyFile.write('S248112  ' + sim_dict[simulation_type] + '2048. 5. 20. 1. ALL 70. 0.\n')
     keyFile.write('DESIGN                                               \n')
-    # keyFile.write('THINBTA' + '        2048.        80.\n')
+    keyFile.write('THINBTA' + '        2048.        80.\n')
     keyFile.write('STDINFO\n')
     keyFile.write('INVYEAR        ' + str(year) + '\n')
     keyFile.write('NUMCYCLE        ' + str(num_cycles) + '\n')
