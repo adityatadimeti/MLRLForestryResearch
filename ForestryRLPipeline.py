@@ -1,6 +1,65 @@
+import math
+import matplotlib.pyplot as plt
 import os
-from tqdm import tqdm
 import pandas as pd
+import subprocess
+from tqdm import tqdm
+
+def simulation_setup(filepath, year, num_cycles, simulation_type):
+    sim_dict = {"unthinned" : "UNTHINNED CONTROL", "thin" : "THINDBH"}
+    num_cycles = str(int(num_cycles) * 1.0)
+    keyFile = open(filepath, 'w')
+    keyFile.write('SCREEN\n')
+    keyFile.write('STATS\n')
+
+    # The STDIDENT keyword record allows you to assign an identification code to a stand.
+    # None of the keyword parameter fields are used, but one supplemental data record is
+    # required. This supplemental record contains the stand identification (such as S248112
+    # shown below) in columns l-26. This ID appears with every output table in the main 
+    # output file. The remainder of the columns, up through column 80 can be used to transmit
+    # a “title” which will also be reproduced at the beginning of each output table. 
+    keyFile.write('STDIDENT\n')
+    keyFile.write('S248112  ' + sim_dict[simulation_type] + '2048. 5. 20. 1. ALL 70. 0.\n')
+    keyFile.write('DESIGN                                               \n')
+    # keyFile.write('THINBTA' + '        2048.        80.\n')
+    keyFile.write('STDINFO\n')
+    keyFile.write('INVYEAR        ' + str(year) + '\n')
+    keyFile.write('NUMCYCLE        ' + str(num_cycles) + '\n')
+    keyFile.write('TREEFMT\n')
+
+    # Below is FORTRAN code that specifices the format which the keyfile takes. In particular,
+    # I4: Integer format with 4 characters.
+    # T1: A space (tab) format with 1 character.
+    # I7: Integer format with 7 characters.
+    # F6.0: Floating-point format with 6 characters and 0 decimal places (essentially an integer format).
+    # I1: Integer format with 1 character.
+    # A3: Alphanumeric format with 3 characters (used for strings).
+    # F4.1: Floating-point format with 4 characters and 1 decimal place.
+    # F3.1: Floating-point format with 3 characters and 1 decimal place.
+    # 2F3.0: Two floating-point values, each with 3 characters and 0 decimal places.
+    # F4.1: Floating-point format with 4 characters and 1 decimal place.
+    # I1: Integer format with 1 character.
+    # 6I2: Six integer values, each with 2 characters.
+    # 2I1: Two integer values, each with 1 character.
+    # I2: Integer format with 2 characters.
+    # 2I3: Two integer values, each with 3 characters.
+    # 2I1: Two integer values, each with 1 character.
+    # F3.0: Floating-point format with 3 characters and 0 decimal places.
+
+    keyFile.write('(I4,T1,I7,F6.0,I1,A3,F4.1,F3.1,2F3.0,F4.1,I1,\n')
+    keyFile.write('6I2,2I1,I2,2I3,2I1,F3.0) \n')
+
+    # From FVS Documentation:
+    # 
+    # One option is to enter the tree records as supplemental data records for the TREEDATA
+    # keyword record. In this case, the dataset reference number (field 1) should be assigned
+    # the logical unit number for record input at the computer installation (logical unit 15 on
+    # most systems) and a special record containing the data value –999 must be added to the
+    # end of the tree record file. 
+    keyFile.write('TREEDATA  15.0\n')
+
+    # Note that we are not closing keyFile since we append to it later.
+    return keyFile
 
 tree_widths = []
 for j in range(8):
@@ -11,49 +70,27 @@ growth_vals = []
 print(tree_widths)
 
 
-trees_dataframe = pd.read_excel('Datasets/trees.csv')
+trees_dataframe = pd.read_excel('Datasets/Redwoods.csv')
 total = len(trees_dataframe)
 
-invalid_indices = [54,55,59,60,61,200]
 
 increment = 0
 
 
-keyFile = open('testKey.key', 'w')
-keyFile.write('SCREEN\n')
-keyFile.write('STATS\n')
-keyFile.write('STDIDENT\n')
-keyFile.write('S248112  UNTHINNED CONTROL.\n')
-keyFile.write('DESIGN                                               \n')
-
-keyFile.write('STDINFO\n')
-keyFile.write('INVYEAR        2018.0\n')
-keyFile.write('NUMCYCLE        6.0\n')
-keyFile.write('TREEFMT\n')
-keyFile.write('(I4,T1,I7,F6.0,I1,A3,F4.1,F3.1,2F3.0,F4.1,I1,\n')
-keyFile.write('6I2,2I1,I2,2I3,2I1,F3.0) \n')
-
-keyFile.write('TREEDATA  15.0\n')
-# for index, row in tqdm(trees_dataframe.iloc[0: stopping].iterrows(), total=total):
-# for index, row in trees_dataframe.iloc[0: 1].iterrows():
-
-#print unique entries in row column
+keyFile = simulation_setup('testKey.key', '2018', 10, 'thin')
 
 uniquePlots = []
-# for width in 
-# width_vals = [10, 15, 20, 25, 30, 35, 40, 45, 50]
 width_vals = [50]
 for width in width_vals:
     print('SIMULATION; WIDTH = ', width)
     for index, row in trees_dataframe.iterrows():
-        if index > 2950:
+        if index > 2998:
             break
-
-        import math
-        # print(trees_dataframe.columns)
 
         if int(row['Plot']) not in uniquePlots:
             uniquePlots.append(int(row['Plot']))
+        if index == 2998:
+            print(len(uniquePlots))
 
         Plot = '    ' if pd.isna(row['Plot']) else str(row['Plot']) + (' ' * (4 - len(str(row['Plot']))))
         TreeID = '   ' if pd.isna(row['TreeID']) else str(row['TreeID']) + (' ' * (3 - len(str(row['TreeID']))))
@@ -69,12 +106,10 @@ for width in width_vals:
         TopKill = '   '
         HeightIncrement = '    '
 
-        # if cratio doesn't exist in row, set it blank
-
+        # If cratio doesn't exist in row, set it blank
         CrownRatioCode = ' ' if pd.isna(row['Cratio']) else str(min(9, math.trunc(int(row['Cratio']) / 10 + 1)))
         inputString = ''
         inputString += (Plot + TreeID + TreeCount + TreeHistory + Species + DBH + DBHincrement + TotalHeight + TopKill + HeightIncrement + CrownRatioCode + '  0 0 0 0 0 011\n')
-        # print(inputString)
         keyFile.write(inputString)
 
 # print(len(uniquePlots))
@@ -94,65 +129,9 @@ for width in width_vals:
 
     makefile.close()
 
-    import subprocess
-
-    # output = subprocess.Popen("make -f makefile", shell=True, stdout=subprocess.PIPE).communicate()[0]
     subprocess.Popen("make -f makefile", shell=True)
 
 
-
-
-
-# keyFile.write('-999\n')
-# keyFile.write('ECHOSUM\n')
-# keyFile.write('PROCESS\n')
-# keyFile.write('STOP\n')
-# keyFile.close()
-
-# makefile = open('makefile', 'w')
-# print(makefile.name)
-# makefile.write('all : cat01\n')
-# makefile.write('cat01 : \n')
-
-# makefile.write('\t' + './ForestVegetationSimulator-FS2023.1/bin/FVSca --keywordfile=/Users/adityatadimeti/forest-project/testKey.key\n')
-
-# makefile.close()
-
-# import subprocess
-
-# output = subprocess.Popen("make -f makefile", shell=True, stdout=subprocess.PIPE).communicate()[0]
-# print(len(output))
-
-# if len(output) == 110:
-#     print(index)
-#     invalid_indices.append(index)
-
-# print(invalid_indices)
-    # print(len(output)) # length will be 110 if there's an error
-
-
-    # print(output)
-
-    # outputFile = open('/Users/adityatadimeti/forest-project/testKey.sum', 'rb')
-
-
-    # import pandas as pd
-    # import math
-    # import matplotlib.pyplot as plt
-
-    # Read the tree data from the CSV file
-    # trees_dataframe = pd.read_excel('/Users/adityatadimeti/forest-project/trees.csv')
-
-    # Create empty lists to store the tree widths and growth values
-
-#     increment = 0
-#     with outputFile as file:
-#         for line in file:
-#             if increment == 0:
-#                 increment += 1
-#                 continue
-#             growthVal = int(str(line)[40:45].strip().replace(' ', ''))
-#             growth_vals.append(growthVal)
 
 
 
@@ -171,7 +150,6 @@ for width in width_vals:
 # outputFile = open('testKey.sum', 'rb')
 
 
-# import pandas as pd
 #     # Read the tree data from the CSV file
 # trees_dataframe = pd.read_excel('/Users/adityatadimeti/forest-project/trees.csv')
 
