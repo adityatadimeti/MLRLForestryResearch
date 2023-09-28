@@ -206,7 +206,6 @@ class ForestryRL:
         new_simulation_actions = list(state[2])[:]
         new_simulation_actions.append(action)
 
-
         # run FVS simulation here. get cubic feet
         keyFile = simulation_setup('testKey.key', 2018, 6, tuple(new_simulation_actions))
         run_simulation('/Users/adityatadimeti/Desktop/Datasets/Redwoods.csv', keyFile)
