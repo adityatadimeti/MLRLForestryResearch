@@ -218,11 +218,16 @@ class ForestryRL:
             initial_feet = float(df["Start Merch CU Ft"].iloc[len(new_simulation_actions) - 1])
             new_cubic_feet = float(df["Start Merch CU Ft"].iloc[len(new_simulation_actions)])
             reward = removal + new_cubic_feet - (initial_feet - removal) # Removal + growth after removal
+
+            #just do removal, not removal + growth after. terminal state regardless is what you have left, we care about the beginning states
+            # hence the total reward is the discounted sum of future rewards. 
         else:
             initial_feet = float(df["Start Merch CU Ft"].iloc[len(new_simulation_actions) - 1])
             new_cubic_feet = float(df["Start Merch CU Ft"].iloc[len(new_simulation_actions)])
             reward = new_cubic_feet - initial_feet # Growth without removal
             
+            # last state, reweard is the merchantbility you ended at (like as if you sold all of it). at each time step, the reward 
+            # you have is 0. 
         # print(df.head)
         # print(tuple(new_simulation_actions), type(tuple(new_simulation_actions)))
         next_state = (round(new_cubic_feet, -3), state[1] + years, tuple(new_simulation_actions))
