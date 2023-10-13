@@ -148,7 +148,7 @@ def process_results(results_path):
     return df
 
 keyFile = simulation_setup('testKey.key', 2018, 6, [])
-run_simulation('/Users/adityatadimeti/Desktop/Datasets/Redwoods.csv', keyFile)
+run_simulation('Redwoods.csv', keyFile)
 df = process_results('testKey.sum')
 print(df.head())
 
@@ -208,7 +208,7 @@ class ForestryRL:
 
         # run FVS simulation here. get cubic feet
         keyFile = simulation_setup('testKey.key', 2018, 6, tuple(new_simulation_actions))
-        run_simulation('/Users/adityatadimeti/Desktop/Datasets/Redwoods.csv', keyFile)
+        run_simulation('Redwoods.csv', keyFile)
         df = process_results('testKey.sum')
         reward = 0
         new_cubic_feet = 0
